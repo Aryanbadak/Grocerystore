@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    scroll-behavior: smooth;
+    font-family: "feather-icons";
+}
+.curspoint{
+    cursor: pointer;
+}
+.tex-color{
+    color: #0aad0a;
+}
+.textColor{
+    color: #6d7177;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.position{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.fontSz{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.hover:hover{
+    background-color: #cdd0cf;
+    color: #000;
+}
+.dropitems{
+    border-radius: 7px;
+    color: #6d7177;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+.dropimgpostion{
+    position: absolute;
+    top: 38px;
+}
+
+:root{
+    --green:(#0aad0a);
+}
+.texGreen{
+    color: var(--green);
+}
+.bgbtn{
+    height: 30px;
+    width: 30px;
+    background-color: #bfc6c4;
+    text-align: center;
+}
+.bgbtn:hover{
+    background-color: #0aad0a;
+    color: #f0f3f2;
+}
+.Locationbtn{
+    padding: 7px;
+    border-radius: 9px;
+    background-color: white;
+}
+.setPos-1{
+    position: absolute;
+    top: 69px;
+    right: 40px;
+}
+.setPos-2{
+    position: absolute;
+    right: -28px;
+}
+.cat-card:hover{
+    box-shadow: 5px 5px 6px #f0f3f2,-5px -5px 6px #f0f3f2,5px 5px 6px #f0f3f2,-5px -5px 6px #f0f3f2;
+    border: 1px solid #0aad0a;
+    border-radius: 2px;
+    /* #f0f3f2 */
+}
+.strS{
+    font-size: 0.8rem;
+}
+.hide{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.btnCustom{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 11px;
+    border: none;
+}
+.buybtn{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.countdown{
+    width: 55px;
+    height: 55px;
+    padding: 8px;
+    margin-right: 2px;
+}
+.heroimgcon{
+    top: 50px;
+    padding: 15px 50px 0 100px;
+    height: 100%;
+}
+.mrg-sm{
+    margin-bottom: 85px;
+}
+.mrg{
+    margin-top: 15px;
+}
+.dis-res{
+    padding: 6px;
+}
+.nav-list-itm{
+    font-size: 0.9rem;
+    font-weight: 500;
+    vertical-align: text-bottom;
+}
+.nav-list-itm1{
+    font-size: 1rem;
+    font-weight: 500;
+    vertical-align: text-bottom;
+}
+.ftHover:hover{
+    color: #0aad0a;
+}
+.brd-f-link{
+    border: 0.8px solid #6d7177;
+    border-radius: 7px;
+    padding: 1px 5px 3px 5px;
+}
+.pos{
+    right: 15px;
+    bottom: 25px;
+    position: fixed;
+}
+.justify-center1{
+    justify-content: end;
+}
+.payimgresp{
+    width: 120px;
+}
+.pdftcon{
+    padding: 40px;
+}
+.follinkres{
+    margin-right: 15px;
+}
+/* .position{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+} */
+.qunbtn{
+    padding: 1px 10px 1px 10px;
+    background-color: white;
+    border: 1px solid #bfc6c4;
+}
+.qunbtnval{
+    padding: 1px 10px 1px 10px;
+    background-color: white;
+    border-bottom: 1px solid #bfc6c4;
+    border-top: 1px solid #bfc6c4;
+}
+.qunbtn:hover{
+    background-color: #cdd0cf;
+    color: #000;
+}
+.badgepos{
+    left: 18px;
+    top: -5px;
+}
+.bigbtn{
+    background-color: #0aad0a;
+    border-radius: 9px;
+    padding: 7px;
+    font-size: 1rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.bigbtn2{
+    background-color: #f0f3f2;
+    border-radius: 9px;
+    padding: 7px;
+    font-size: 1rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+
+}
+.btnhover:hover{
+    background-color: #e3e3e3;
+}
+.pdrightres{
+    padding-right: 80px;
+}
+.pdleftres{
+    padding-left: 80px;
+}

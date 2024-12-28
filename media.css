@@ -1,0 +1,141 @@
+@media screen and (max-width:992px) {
+    .scrollSec{
+        overflow-x: auto;
+    }
+    .responsive{
+        font-size: 1.4rem;
+        margin-top: 6px;
+        padding: 0;
+    }
+    .heroimgcon{
+        top: 35px;
+        padding: 0px 30px 15px 40px;
+        height: 250px;
+    }
+    .carocontresonsive1{
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    .carocontresonsive2{
+        font-size: 0.8rem;
+    }
+    .dis-res{
+        font-size: 0.6rem;
+    }
+    .btnres{
+        padding: 7px;
+        font-size: 0.8rem;
+    }
+    .mrg-sm{
+        margin-bottom: 30px;
+    }
+    /* .payiconresp{
+        justify-content: center;
+    } */
+}
+
+@media screen and (max-width:768px) {
+    .countdown{
+        width: 80px;
+    }
+    
+    
+}
+
+@media screen and (max-width:500px) {
+    .responsive{
+        font-size: 1rem;
+    }
+    .badge{
+        font-size: 0.8rem;
+    }
+    .carocontresonsive1{
+        font-size: 1rem;
+    }
+    .heroimgcon{
+        top: 20px;
+    }
+    .dis-res{
+        font-size: 0.4rem;
+        padding: 3px;
+    }
+    .carocontresonsive1{
+        font-size: 0.7rem;
+        margin-bottom: 3px;
+    }
+    .btnres{
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+    .popResp{
+        font-size: 0.7rem;
+    }
+    .strS{
+        font-size: 0.6rem;
+    }
+    .prResp{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnCustom{
+        padding: 7px;
+    }
+    .icon-res{
+        height: 26px;
+        width: 26px;
+    }
+    .icon-res-1{
+        font-size: 0.4rem;
+        position: absolute;
+        left: 7px;
+        top: 7px;
+    }
+    .icon-res-2{
+        font-size: 0.4rem;
+        position: absolute;
+        left: 7px;
+        top: 43px;
+    }
+    .icon-res-3{
+        font-size: 0.4rem;
+        position: absolute;
+        left: 7px;
+        top: 75px;
+    }
+    .hide{
+        padding: 2px;
+    }
+    .payiconresp{
+        font-size: 0.9rem;
+    }
+    .payimgresp{
+        height: 40px;
+        width: 80px;
+    }
+    .follinkres{
+       text-wrap: nowrap;
+    }
+}
+@media screen and (max-width:600px) {
+    .respxs{
+        flex-direction: column;
+    }
+    .pdtopxs{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .justify-center,.justify-center1{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pdftcon{
+        padding: 20px;
+    }
+    .pdrightres{
+        padding: 0 30px 0 30px;
+    }
+    .pdleftres{
+        padding: 0 30px 0 30px;
+    }
+}
