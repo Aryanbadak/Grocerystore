@@ -34,7 +34,6 @@
     color: #6d7177;
     cursor: pointer;
     text-decoration: none;
-    font-size: 0.7rem;
 }
 .dropimgpostion{
     position: absolute;
@@ -207,4 +206,26 @@
 }
 .pdleftres{
     padding-left: 80px;
+}
+.posfixed{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1500;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #0aad0a;
+}
+.addmessage1,.addmessage2,.addmessage3,.addmessage4{
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    background-color: #fff;
+    border-radius: 9px;
+    color: #000;
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1100;
 }

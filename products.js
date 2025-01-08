@@ -6,6 +6,9 @@ let dayele = document.querySelector(".day")
 let quntsel = document.querySelector(".qunbtnval")
 let totalitembg = document.querySelector(".totalitm")
 let pricetotal = document.querySelector(".price")
+let wishitems = document.querySelector(".wishlistdata")
+let likebadgesel = document.querySelector(".likeitemstotal")
+let producttotalsel = document.querySelector(".producttotal")
 
 const products=[
     {
@@ -147,7 +150,6 @@ const products=[
 
 function DisplayProducts(){
     products.forEach((i)=>{
-       console.log(i)
         elementsel.innerHTML+=
         `<div class="col">
                 <div class="card cat-card">
@@ -160,11 +162,11 @@ function DisplayProducts(){
                                 <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
                               </svg>
                             </a>
-                            <a href="#" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn icon-res" style="font-size:small;">
+                            <div href="" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn icon-res" style="font-size:small;" onclick="addtoWishList(${i.id})">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart icon-res-2" viewBox="0 0 16 16">
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                   </svg>
-                            </a>
+                            </div>
                             <a href="#" class="p-1 rounded-circle text-decoration-none text-dark bgbtn icon-res" style="font-size:small;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right icon-res-3" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
@@ -234,7 +236,7 @@ const bestsellproducts=[
     },
 ]
 
-const concat = products.concat(bestsellproducts)
+const concatArray = products.concat(bestsellproducts)
 
 let time = new Date()
 let hr =  time.getHours()
@@ -243,7 +245,7 @@ let sec = time.getSeconds()
 let day=0
 if(hr==24){
     day++
-    console.log(day)
+    //console.log(day)
 }else{
     false
 }
@@ -262,11 +264,11 @@ function DisplayBestSellProducts(){
                                 <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
                               </svg>
                             </a>
-                            <a href="#" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn" style="font-size:small;">
+                            <div href="" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn" style="font-size:small;"  onclick="addtoWishList(${bestSproducts.id})">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
                                   </svg>
-                            </a>
+                            </div>
                             <a href="#" class="p-1 rounded-circle text-decoration-none text-dark bgbtn" style="font-size:small;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
@@ -333,14 +335,21 @@ updatecart()
 function addCart(id){
     if(cart.some((item)=>item.id===id)){
         changeqty("plus",id)
-        console.log("false")
+        $(document).ready(function(){
+            $(".addmessage4").fadeIn(1000)
+            $(".addmessage4").fadeOut(2000)
+         })
     }else{
-        console.log("true")
-        const item = concat.find((product)=>product.id===id)
+        const item = concatArray.find((product)=>product.id===id)
         cart.push({
             ...item,
             qty:1
         });
+        $(document).ready(function(){
+            $(".addmessage3").fadeIn(1000)
+            $(".addmessage3").fadeOut(2000)
+            
+        })
     }
     updatecart()
 }
@@ -377,6 +386,7 @@ function addCartItem(){
 }
 
 
+
 function changeqty(action,id){
     cart = cart.map((item)=>{
         let qty = item.qty
@@ -404,8 +414,8 @@ function subTotal(){
     })
     pricetotal.innerHTML=`<span class="nav-list-itm1 ps-1">total price : $${totalprice}</span>`
     totalitembg.innerHTML=totalitems
-    console.log(totalprice)
-    console.log(pricetotal)
+    //console.log(totalprice)
+    //console.log(pricetotal)
 }
 
 function removeitem(id){
@@ -413,5 +423,67 @@ function removeitem(id){
     updatecart()
 }
 
+function addWishListItems(){
+    wishitems.innerHTML = ""
+    wishList.forEach((item)=>{
+        wishitems.innerHTML +=`<tr class="text-nowrap"><td class="px-4 py-4"><input type="checkbox" class="form-check-input" value=""></td>
+                    <td class="py-2"><img src="images/${item.id}.jpg" alt="" style="width: 50px; height: 50px;"></td>
+                    <td class="py-4">${item.name}</td>
+                    <td class="py-4 text-muted">$${item.price}</td>
+                    <td class="py-4"><span class="p-1 px-2 bg-success text-light fontSz rounded">In Stock</span></td>
+                    <td class="py-4"><span href="#" class="text-light text-decoration-none rounded btnCustom curspoint"
+                        style="background-color: #0aad0a; vertical-align: middle;" tabindex="0" onclick="addCart(${item.id})">Add to cart</span>
+                    </td>
+                    <td class="py-4"><span class="d-flex align-items-center text-danger ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16" onclick="RemoveListItem(${item.id})">
+                        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                      </svg></span></td></tr>`
+    })
+}
+
+let wishList = JSON.parse(localStorage.getItem("WISHLIST")) || [];
+updatelist()
+
+function addtoWishList(id){
+    if(wishList.some((checkitem)=>checkitem.id===id)){
+        console.log("inter")
+        $(document).ready(function(){
+           $(".addmessage2").fadeIn(1000)
+           $(".addmessage2").fadeOut(2000)
+        })
+    }else{
+        concatArray.forEach((element)=>{
+            if(element.id===id){
+                let itemObj = element
+                wishList.push({
+                    ...itemObj
+                })
+            }
+        })
+        $(document).ready(function(){
+            $(".addmessage1").fadeIn(1000)
+            $(".addmessage1").fadeOut(2000)
+            
+        })
+    }
+    updatelist()
+}
 
 
+function updatelist(){
+    addWishListItems()
+    wishListItemTotal()
+    localStorage.setItem("WISHLIST", JSON.stringify(wishList))
+    console.log("update wishlist storage")
+}
+
+
+function wishListItemTotal(){
+    let total = wishList.length
+    likebadgesel.innerHTML=total
+    producttotalsel.innerHTML=total
+}
+
+function RemoveListItem(id){
+    wishList = wishList.filter((item)=>item.id !== id)
+    updatelist()
+} 

@@ -28,7 +28,7 @@
 <body>
     <div class="border-bottom">
         <!-- first -->
-         
+
         <div class="bg-light py-1">
             <div class="container-sm">
                 <div class="row">
@@ -228,20 +228,21 @@
 
                         <!-- Button trigger modal -->
 
-                        <button type="button" class="Locationbtn border hover d-flex align-items-center" data-bs-toggle="modal"
-                            data-bs-target="#LocationModal">
+                        <button type="button" class="Locationbtn border hover d-flex align-items-center"
+                            data-bs-toggle="modal" data-bs-target="#LocationModal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-geo-alt" viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                             </svg>
                             <span class="ms-1">Location</span>
                         </button>
                     </div>
                     <div class="col-4 col-lg-2 col-xxl-2 col-xl-2 text-end col-md-4 col-sm-5 col-6">
                         <div class="list-inline">
-                            <div role="button" class="me-2 text-muted position-relative list-inline-item">
+                            <div role="button" data-bs-target="#wishlistmodal" data-bs-toggle="modal"
+                                class="me-2 text-muted position-relative list-inline-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -250,10 +251,11 @@
                                     </path>
                                 </svg>
                                 <span
-                                    class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">4</span>
+                                    class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success likeitemstotal">0</span>
                             </div>
-                            <div role="button" class="text-muted me-2 list-inline-item" data-bs-toggle="modal" data-bs-target="#signinmodal">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            <div role="button" class="text-muted me-2 list-inline-item" data-bs-toggle="modal"
+                                data-bs-target="#signinmodal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -269,10 +271,13 @@
                                     <line x1="3" y1="6" x2="21" y2="6"></line>
                                     <path d="M16 10a4 4 0 0 1-8 0"></path>
                                 </svg>
-                                <span class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success totalitm">0</span>
+                                <span
+                                    class="custom-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success totalitm">0</span>
                             </div>
-                            <div role="button" class="d-inline-block d-lg-none list-inline-item ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasnavbar">
-                                <button type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed p-0">
+                            <div role="button" class="d-inline-block d-lg-none list-inline-item ms-2"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasnavbar">
+                                <button type="button" aria-label="Toggle navigation"
+                                    class="navbar-toggler collapsed p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"
                                         fill="currentColor" class="bi bi-text-indent-left text-primary">
                                         <path
@@ -381,20 +386,62 @@
                         </div>
                     </div>
                     <div class="col-1 text-center dropdown me-2" style="width: 80px;">
-                        <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <span class="text-capitalize nav-list-itm">acoount</span>
                         </a>
                         <ul class="dropdown-menu p-1">
                             <a href="signin.html" class="dropdown-item text-capitalize hover dropitems">sign in</a>
                             <a href="signup.html" class="dropdown-item text-capitalize hover dropitems">sign up</a>
-                            <a href="#" class="dropdown-item text-capitalize hover dropitems mb-2">forgot password</a>
+                            <a href="resetpassword.html"
+                                class="dropdown-item text-capitalize hover dropitems mb-2">forgot password</a>
                         </ul>
                     </div>
                     <div class="col-1 text-center" style="width: 100px;">
                         <a href="#" class="text-decoration-none">
                             <span class="text-dark text-capitalize nav-list-itm">dashboard</span>
-                            
+
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wishlist modal -->
+
+    <div class="modal" id="wishlistmodal" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header px-5 shadow-sm">
+                    <div class="col-6 col-xl-2 col-lg-3 col-xxl-2 col-md-8 col-sm-7">
+                        <a class="navbar-brand m-0" href="./index.html">
+                            <img src="images/freshcart-logo.svg" alt="eCommerce HTML Template">
+                        </a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mb-1">
+                        <h2 class="text-decoration-none text-capitalize fs-2 fw-bold">my Wishlist</h2>
+                        <p class="text-muted">There are <span class="m-1 producttotal">0</span>products in this
+                            Wishlist.</p>
+                    </div>
+                    <div class="container overflow-auto">
+                        <table class="table mt-4 w-100">
+                            <tr class="text-muted" style="background-color: #f0f3f2;">
+                                <th scope="col" class="px-4"><input type="checkbox" class="form-check-input" value="">
+                                </th>
+                                <th scope="col"></th>
+                                <th scope="col">Products</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                                <th scope="col">Remove</th>
+                            </tr>
+                            <tbody class="table-group-divider wishlistdata">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -421,7 +468,8 @@
                             <label for="emailinput" class="">Enter Email Address</label>
                         </div>
                         <div class="form-floating mb-2">
-                            <input type="password" class="form-control" id="passwordinput" placeholder="password" required>
+                            <input type="password" class="form-control" id="passwordinput" placeholder="password"
+                                required>
                             <label for="passwordinput" class="">Enter Password</label>
                         </div>
                         <p class="nav-list-itm text-muted">By Signup, you agree to our
@@ -429,9 +477,12 @@
                             &
                             <a href="" class="text-decoration-none" style="color: #0aad0a;"> Privacy Policy</a>
                         </p>
-                            <button type="submit" class="text-light rounded btnCustom pointer mb-3" style="background-color: #0aad0a; vertical-align: middle;">Sign Up</button>
+                        <button type="submit" class="text-light rounded btnCustom pointer mb-3"
+                            style="background-color: #0aad0a; vertical-align: middle;">Sign Up</button>
                     </form>
-                    <p class="d-flex align-items-center justify-content-center text-muted m-0">Already have an account?<a href="signin.html" class="text-decoration-none text-capitalize ps-1 curspoint" style="color: #0aad0a;">sign up</a></p>        
+                    <p class="d-flex align-items-center justify-content-center text-muted m-0">Already have an
+                        account?<a href="signin.html" class="text-decoration-none text-capitalize ps-1 curspoint"
+                            style="color: #0aad0a;">sign up</a></p>
                 </div>
             </div>
         </div>
@@ -439,24 +490,23 @@
 
     <!-- navbar left canvas -->
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasnavbar" aria-labelledby="offcanvasaLeft">
-        <div class="offcanvas-header">
-            <a class="navbar-brand m-0" href="">
+    <div class="offcanvas offcanvas-start" style="overflow-y: auto;" tabindex="-1" id="offcanvasnavbar"
+        aria-labelledby="offcanvasaLeft">
+        <div class="offcanvas-header posfixed">
+            <a class="navbar-brand m-0 w-100 d-flex align-items-center justify-content-between" href="">
                 <img src="images/freshcart-logo.svg" alt="eCommerce HTML Template">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </a>
-            <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="container">
             <form action="#">
                 <div class="input-group mb-4">
                     <input class="form-control" type="search" placeholder="Seacrh for products">
                     <span class="input-group-append">
-                        <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end"
-                            type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-search">
+                        <button class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-search">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
@@ -467,7 +517,7 @@
             <div class="col pe-0 me-2 dropdown mb-3" style="background-color: #0aad0a; border-radius: 9px;">
                 <a href="#"
                     class="text-light text-decoration-none px-3 py-2 nav-list-itm dropdown-toggle w-100 d-flex align-items-center justify-content-center"
-                    data-bs-toggle="dropdown" data-bs-target="dropdown" role="button" aria-expanded="true" >
+                    data-bs-toggle="dropdown" data-bs-target="dropdown" role="button" aria-expanded="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-grid-fill me-2 mb-1" viewBox="0 0 16 16">
                         <path
@@ -488,8 +538,8 @@
                 </ul>
             </div>
             <div class="col p-0 dropdown border-bottom mb-2">
-                <a href="#" class="text-decoration-none drop1 dropdown-toggle text-dark"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="text-decoration-none drop1 dropdown-toggle text-dark" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <span class="text-dark text-capitalize nav-list-itm">home</span>
                 </a>
                 <ul class="dropdown-menu p-1">
@@ -503,13 +553,13 @@
                     <span class="text-dark text-capitalize nav-list-itm">stores</span>
                 </a>
             </div>
-            <div class="col dropdown border-bottom mb-2">
+            <div class="col dropdown border-bottom mb-2" data-bs-target="#scrollitems">
                 <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <span class="text-dark text-capitalize nav-list-itm">mega menu</span>
                 </a>
                 <div class="container-sm dropdown-menu position-absolute">
-                    <div class="row row-cols-lg-3 row-cols-xl-3">
+                    <div class="row row-cols-lg-3 row-cols-xl-3 d-block">
                         <div class="col d-flex flex-column ps-4 pe-0 py-3">
                             <h2 class="fs-6 p-1 tex-color">Dairy, Bread & Eggs</h2>
                             <a href="#" class="text-decoration-none dropitems hover p-1">Butter</a>
@@ -521,7 +571,7 @@
                             <a href="#" class="text-decoration-none dropitems hover p-1">Condensed Milk</a>
                             <a href="#" class="text-decoration-none dropitems hover p-1">Dairy Products</a>
                         </div>
-                        <div class="col d-flex flex-column py-3">
+                        <div class="col d-flex flex-column py-3 px-4">
                             <h2 class="fs-6 p-1 tex-color">Breakfast & Instant Food</h2>
                             <a href="#" class="text-decoration-none dropitems hover p-1">Breakfast Cereal</a>
                             <a href="#" class="text-decoration-none dropitems hover p-1">Noodles, Pasta &
@@ -544,22 +594,12 @@
                             <a href="#" class="text-decoration-none dropitems hover p-1">Herbal Drinks</a>
                             <a href="#" class="text-decoration-none dropitems hover p-1">Milk Drinks</a>
                         </div>
-                        <!-- <div class="col d-flex align-items-center pe-4 position-relative">
-                            <img src="images/menu-banner.jpg" alt="" class="img-fluid rounded"
-                                style="height: 290px;">
-                            <div class="container dropimgpostion">
-                                <h6 class="fs-6 text-capitalize">dont miss this <br>offer.</h6>
-                                <a href="#" class="text-light text-decoration-none rounded py-1 px-2 fontSz"
-                                    style="background-color: #0aad0a; vertical-align: middle;" tabindex="0">Shop
-                                    Now 
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
             <div class="col dropdown border-bottom mb-2">
-                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <span class="text-capitalize nav-list-itm">acoount</span>
                 </a>
                 <ul class="dropdown-menu p-1">
@@ -571,7 +611,7 @@
             <div class="col border-bottom">
                 <a href="#" class="text-decoration-none">
                     <span class="text-dark text-capitalize nav-list-itm">dashboard</span>
-                    
+
                 </a>
             </div>
         </div>
@@ -582,26 +622,25 @@
 
     <!-- off canvas for add to cart -->
 
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cart" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="cart"
+        aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">shop cart</h5>
             <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
-            <h2 class="nav-list-itm1 pe-3 text-capitalize d-flex justify-content-center price"></h2>
+        <h2 class="nav-list-itm1 pe-3 text-capitalize d-flex justify-content-center price"></h2>
         <div class="offcanvas-body">
         </div>
         <span class="price"></span>
         <div class="d-flex justify-content-around align-items-center mb-3">
-            <a href="#"
-                    class="text-light text-decoration-none rounded px-3 py-2 nav-list-itm text-capitalize"
-                     role="button" 
-                    style="background-color: #0aad0a;">
-                    continue shopping
-                </a>
-                <a href="#" class="bg-dark text-decoration-none rounded px-3 py-2 nav-list-itm text-capitalize text-light">
+            <a href="#" class="text-light text-decoration-none rounded px-3 py-2 nav-list-itm text-capitalize"
+                role="button" style="background-color: #0aad0a;">
+                continue shopping
+            </a>
+            <a href="#" class="bg-dark text-decoration-none rounded px-3 py-2 nav-list-itm text-capitalize text-light">
                 proceed to checkout
-                </a>
+            </a>
             </a>
         </div>
     </div>
@@ -795,7 +834,7 @@
             </div>
         </div>
     </div>
-        <!-- <div class="container setPos-1 w-100">
+    <!-- <div class="container setPos-1 w-100">
                     <button class="carousel-control-prev w-100 d-flex justify-content-end prev" type="button"
                         data-bs-target="#carouselCategories" data-bs-slide="prev">
                         <span class="bgbtn me-2 rounded-circle">
@@ -820,207 +859,284 @@
                     </div>
                 </div> -->
 
-        <!-- fruits and vegatable  -->
+    <!-- fruits and vegatable  -->
 
-        <div class="container-sm mt-5 mrg-sm">
+    <div class="container-sm mt-5 mrg-sm">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-3 mb-md-3 mb-lg-0">
+                <div class="rounded img-fluid imghover"
+                    style="background-image: url(images/grocery-banner.png); height: 210px; background-repeat: no-repeat; background-size: cover; background-position: center; box-sizing: border-box; object-fit: cover;">
+                    <div class="py-5 px-5 py-md-5 px-md-5">
+                        <h3 class="mb-1 fw-bold">Fruits &amp; Vegetables</h3>
+                        <p class="mb-4 text-muted fs-6 fw-normal">Get Upto
+                            <span class="fs-6 fw-bolder">30%</span>
+                            Off
+                        </p>
+                        <a class="bg-dark text-light text-decoration-none rounded btnCustom" href="#">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="rounded img-fluid"
+                    style="background-image: url(images/grocery-banner-2.jpg); height: 210px; background-repeat: no-repeat; background-size: cover; background-position: center; box-sizing: border-box;">
+                    <div class="py-5 px-5">
+                        <h3 class="mb-1 fw-bold">Freshly Baked Buns</h3>
+                        <p class="mb-4 text-muted fs-6 fw-normal">Get Upto
+                            <span class="fs-6 fw-bolder">25%</span>
+                            Off
+                        </p>
+                        <a class="bg-dark text-light text-decoration-none rounded btnCustom" href="#">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular products -->
+
+    <div class="container-sm mrg-sm">
+        <h3 class="mb-4">Popular Products</h3>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-3 elements">
+        </div>
+    </div>
+
+    <!-- Daily best sells -->
+
+    <div class="container flex-nowrap mrg-sm">
+        <h3 class="mb-4">Daily Best Sells</h3>
+        <div class="container p-0 scrollSec">
+            <div class="row flex-nowrap row-cols-lg-4 row-cols-md-2 row-cols-1 bestSell">
+                <div class="col">
+                    <div class="container img-fluid rounded px-4 py-4"
+                        style="background-image: url(images/banner-deal.jpg); background-repeat: no-repeat; background-size: cover;  height: 495px;">
+                        <h3 class="text-light fs-4 fw-bold">100% Organic Coffee Beans.</h3>
+                        <p class="text-light fs-6 fw-normal">Get the best deal before close.</p>
+                        <a href="#" class="text-light text-decoration-none rounded btnCustom"
+                            style="background-color: #0aad0a; vertical-align: middle;" tabindex="0">Shop Now <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- special services -->
+
+    <div class="container mrg-sm">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-4">
+            <div class="col mt-2">
+                <div class="mb-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.0002 36.6668C29.2049 36.6668 36.6668 29.2049 36.6668 20.0002C36.6668 10.7954 29.2049 3.3335 20.0002 3.3335C10.7954 3.3335 3.3335 10.7954 3.3335 20.0002C3.3335 29.2049 10.7954 36.6668 20.0002 36.6668Z"
+                            stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 10V20L26.6667 23.3333" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2 class="fs-5">10 minute grocery now</h2>
+                <p class="nav-list-itm text-muted">Get your order delivered to your doorstep at the earliest from
+                    FreshCart pickup stores near you.</p>
+            </div>
+            <div class="col mt-2">
+                <div class="mb-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.3332 20V36.6667H6.6665V20" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M36.6668 11.6665H3.3335V19.9998H36.6668V11.6665Z" stroke="#0AAD0A" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 36.6665V11.6665" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M20.0002 11.6668H12.5002C11.3951 11.6668 10.3353 11.2278 9.55388 10.4464C8.77248 9.66504 8.3335 8.60523 8.3335 7.50016C8.3335 6.39509 8.77248 5.33529 9.55388 4.55388C10.3353 3.77248 11.3951 3.3335 12.5002 3.3335C18.3335 3.3335 20.0002 11.6668 20.0002 11.6668Z"
+                            stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M20 11.6668H27.5C28.6051 11.6668 29.6649 11.2278 30.4463 10.4464C31.2277 9.66504 31.6667 8.60523 31.6667 7.50016C31.6667 6.39509 31.2277 5.33529 30.4463 4.55388C29.6649 3.77248 28.6051 3.3335 27.5 3.3335C21.6667 3.3335 20 11.6668 20 11.6668Z"
+                            stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2 class="fs-5">Best Prices & Offers</h2>
+                <p class="nav-list-itm text-muted">Cheaper prices than your local supermarket, great cashback offers to
+                    top it off. Get best pricess & offers.</p>
+            </div>
+            <div class="col mt-2">
+                <div class="mb-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.5 15.6666L12.5 7.0166" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M35 26.6668V13.3335C34.9994 12.749 34.8451 12.1748 34.5526 11.6688C34.26 11.1627 33.8396 10.7424 33.3333 10.4502L21.6667 3.7835C21.1599 3.49093 20.5851 3.33691 20 3.33691C19.4149 3.33691 18.8401 3.49093 18.3333 3.7835L6.66667 10.4502C6.16044 10.7424 5.73997 11.1627 5.44744 11.6688C5.1549 12.1748 5.0006 12.749 5 13.3335V26.6668C5.0006 27.2514 5.1549 27.8255 5.44744 28.3316C5.73997 28.8376 6.16044 29.2579 6.66667 29.5502L18.3333 36.2168C18.8401 36.5094 19.4149 36.6634 20 36.6634C20.5851 36.6634 21.1599 36.5094 21.6667 36.2168L33.3333 29.5502C33.8396 29.2579 34.26 28.8376 34.5526 28.3316C34.8451 27.8255 34.9994 27.2514 35 26.6668Z"
+                            stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.4502 11.6001L20.0002 20.0168L34.5502 11.6001" stroke="#0AAD0A" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 36.8V20" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2 class="fs-5">Wide Assortment</h2>
+                <p class="nav-list-itm text-muted">Choose from 5000+ products across food, personal care, household,
+                    bakery, veg and non-veg & other categories.</p>
+            </div>
+            <div class="col mt-2">
+                <div class="mb-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.3335 6.6665V16.6665H28.3335" stroke="#0AAD0A" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.6665 33.3335V23.3335H11.6665" stroke="#0AAD0A" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M5.84984 15C6.69512 12.6113 8.13173 10.4756 10.0256 8.79233C11.9195 7.10902 14.2089 5.9329 16.6803 5.37373C19.1517 4.81455 21.7244 4.89053 24.1585 5.59459C26.5925 6.29864 28.8086 7.60782 30.5998 9.39996L38.3332 16.6666M1.6665 23.3333L9.39984 30.6C11.1911 32.3921 13.4071 33.7013 15.8412 34.4053C18.2752 35.1094 20.848 35.1854 23.3194 34.6262C25.7907 34.067 28.0802 32.8909 29.9741 31.2076C31.8679 29.5243 33.3046 27.3887 34.1498 25"
+                            stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2 class="fs-5">Easy Returns</h2>
+                <p class="nav-list-itm text-muted">Not satisfied with a product? Return it at the doorstep & get a
+                    refund within hours. No questions asked policy.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="position-relative" style="background-color: #f0f3f2; width: 100%;padding-bottom: 80px;">
+        <div class="container pdftcon">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                <div class="col d-flex flex-column mb-2">
+                    <h2 class="nav-list-itm1 text-capitalize mb-3">get to know us</h2>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">company</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">about</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">blog</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">help center</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">our value</span></a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2 class="nav-list-itm1 text-capitalize mb-3">for consumers</h2>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">payments</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">shipping</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">products returns</span></a>
+                    <a href="#" class="text-decoration-none"><span class="textColor ftHover nav-list-itm">FAQ</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">shop checkout</span></a>
+                </div>
+                <div class="col d-flex flex-column mb-2">
+                    <h2 class="nav-list-itm1 text-capitalize mb-3">become a shopper</h2>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">shopper opportunities</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">become a shopper</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">earnings</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">ideas & guides</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">new retailers</span></a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2 class="nav-list-itm1 text-capitalize mb-3">freshcart program</h2>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">freshcart program</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">gift cards</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">promos & coupons</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">freshcart ads</span></a>
+                    <a href="#" class="text-decoration-none"><span
+                            class="textColor ftHover text-capitalize nav-list-itm">careers</span></a>
+                </div>
+            </div>
+        </div>
+        <hr style="color: #a3aeb9;">
+        <div class="container py-2">
+            <div class="row row-cols-md-1 row-cols-lg-2">
+                <div class="col d-flex align-items-center justify-center">
+                    <span class="text-capitalize pe-2 nav-list-itm1" style="padding-bottom: 2px;">payment
+                        partners</span>
+                    <a href=""><img class="me-1" src="images/amazonpay.svg" alt="amazonpay"></a>
+                    <a href=""><img class="me-1" src="images/mastercard.svg" alt="mastercard"></a>
+                    <a href=""><img class="me-1" src="images/paypal.svg" alt="paypal"></a>
+                    <a href=""><img class="me-1" src="images/visa.svg" alt="visa"></a>
+                </div>
+                <div class="col d-flex align-items-center justify-center1">
+                    <span class="text-capitalize nav-list-itm1 pe-3 payiconresp rep" style="vertical-align: top;">get
+                        deliveries with freshcart</span>
+                    <a href="#"><img src="images/appstore-btn.svg" class="pe-2 payimgresp" alt="app store"></a>
+                    <a href="#"><img src="images/googleplay-btn.svg" class="pe-2 payimgresp" alt="google play"></a>
+                </div>
+            </div>
+        </div>
+        <hr style="color: #a3aeb9;">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 mb-3 mb-md-3 mb-lg-0">
-                    <div class="rounded img-fluid imghover"
-                        style="background-image: url(images/grocery-banner.png); height: 210px; background-repeat: no-repeat; background-size: cover; background-position: center; box-sizing: border-box; object-fit: cover;">
-                        <div class="py-5 px-5 py-md-5 px-md-5">
-                            <h3 class="mb-1 fw-bold">Fruits &amp; Vegetables</h3>
-                            <p class="mb-4 text-muted fs-6 fw-normal">Get Upto
-                                <span class="fs-6 fw-bolder">30%</span>
-                                Off
-                            </p>
-                            <a class="bg-dark text-light text-decoration-none rounded btnCustom" href="#">Shop Now</a>
-                        </div>
-                    </div>
+                <div class="col d-flex align-items-center justify-center">
+                    <span class="textColor follinkres">follow us on</span>
+                    <a href="#" class="textColor brd-f-link ftHover me-2"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="#" class="textColor brd-f-link ftHover me-2"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a>
+                    <a href="#" class="textColor brd-f-link ftHover me-1"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="rounded img-fluid"
-                        style="background-image: url(images/grocery-banner-2.jpg); height: 210px; background-repeat: no-repeat; background-size: cover; background-position: center; box-sizing: border-box;">
-                        <div class="py-5 px-5">
-                            <h3 class="mb-1 fw-bold">Freshly Baked Buns</h3>
-                            <p class="mb-4 text-muted fs-6 fw-normal">Get Upto
-                                <span class="fs-6 fw-bolder">25%</span>
-                                Off
-                            </p>
-                            <a class="bg-dark text-light text-decoration-none rounded btnCustom" href="#">Shop Now</a>
-                        </div>
-                    </div>
+                <div class="col d-flex align-items-center justify-center1">
+                    <span class="nav-list-itm textColor text-capitalize follinkres">© 2024 - 2025 all rights reserved
+                    </span>
                 </div>
             </div>
         </div>
-
-        <!-- Popular products -->
-
-        <div class="container-sm mrg-sm">
-            <h3 class="mb-4">Popular Products</h3>
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-3 elements">
-            </div>
+        <div class="pos">
+            <a class="bg-dark text-light text-decoration-none rounded buybtn px-3 py-3 ms-5" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-cart3 mb-1 me-2" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>Buy Now</a>
         </div>
+        <span class="addmessage1 shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16" style="color: #0aad0a;">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </svg>product added to wishlist</span>
+        <span class="addmessage2 shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-x-circle-fill me-2" viewBox="0 0 16 16" style="color: red;">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+            </svg>product allready added to wishlist</span>
+        <span class="addmessage3 shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16" style="color: #0aad0a;">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </svg>product added to cart</span>
+        <span class="addmessage4 shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-x-circle-fill me-2" viewBox="0 0 16 16" style="color: red;">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+            </svg>product allready added to cart</span>
+    </footer>
+    <script src="products.js"></script>
+</body>
 
-        <!-- Daily best sells -->
-
-        <div class="container flex-nowrap mrg-sm">
-            <h3 class="mb-4">Daily Best Sells</h3>
-            <div class="container p-0 scrollSec">
-                <div class="row flex-nowrap row-cols-lg-4 row-cols-md-2 row-cols-1 bestSell">
-                    <div class="col">
-                        <div class="container img-fluid rounded px-4 py-4"
-                            style="background-image: url(images/banner-deal.jpg); background-repeat: no-repeat; background-size: cover;  height: 495px;">
-                            <h3 class="text-light fs-4 fw-bold">100% Organic Coffee Beans.</h3>
-                            <p class="text-light fs-6 fw-normal">Get the best deal before close.</p>
-                            <a href="#" class="text-light text-decoration-none rounded btnCustom"
-                                style="background-color: #0aad0a; vertical-align: middle;" tabindex="0">Shop Now <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- special services -->
-
-        <div class="container mrg-sm">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-4">
-                <div class="col mt-2">
-                    <div class="mb-4">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.0002 36.6668C29.2049 36.6668 36.6668 29.2049 36.6668 20.0002C36.6668 10.7954 29.2049 3.3335 20.0002 3.3335C10.7954 3.3335 3.3335 10.7954 3.3335 20.0002C3.3335 29.2049 10.7954 36.6668 20.0002 36.6668Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 10V20L26.6667 23.3333" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </div>
-                    <h2 class="fs-5">10 minute grocery now</h2>
-                    <p class="nav-list-itm text-muted">Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
-                </div>
-                <div class="col mt-2">
-                    <div class="mb-4">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.3332 20V36.6667H6.6665V20" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M36.6668 11.6665H3.3335V19.9998H36.6668V11.6665Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 36.6665V11.6665" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.0002 11.6668H12.5002C11.3951 11.6668 10.3353 11.2278 9.55388 10.4464C8.77248 9.66504 8.3335 8.60523 8.3335 7.50016C8.3335 6.39509 8.77248 5.33529 9.55388 4.55388C10.3353 3.77248 11.3951 3.3335 12.5002 3.3335C18.3335 3.3335 20.0002 11.6668 20.0002 11.6668Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 11.6668H27.5C28.6051 11.6668 29.6649 11.2278 30.4463 10.4464C31.2277 9.66504 31.6667 8.60523 31.6667 7.50016C31.6667 6.39509 31.2277 5.33529 30.4463 4.55388C29.6649 3.77248 28.6051 3.3335 27.5 3.3335C21.6667 3.3335 20 11.6668 20 11.6668Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </div>
-                    <h2 class="fs-5">Best Prices & Offers</h2>
-                    <p class="nav-list-itm text-muted">Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.</p>
-                </div>
-                <div class="col mt-2">
-                    <div class="mb-4">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M27.5 15.6666L12.5 7.0166" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M35 26.6668V13.3335C34.9994 12.749 34.8451 12.1748 34.5526 11.6688C34.26 11.1627 33.8396 10.7424 33.3333 10.4502L21.6667 3.7835C21.1599 3.49093 20.5851 3.33691 20 3.33691C19.4149 3.33691 18.8401 3.49093 18.3333 3.7835L6.66667 10.4502C6.16044 10.7424 5.73997 11.1627 5.44744 11.6688C5.1549 12.1748 5.0006 12.749 5 13.3335V26.6668C5.0006 27.2514 5.1549 27.8255 5.44744 28.3316C5.73997 28.8376 6.16044 29.2579 6.66667 29.5502L18.3333 36.2168C18.8401 36.5094 19.4149 36.6634 20 36.6634C20.5851 36.6634 21.1599 36.5094 21.6667 36.2168L33.3333 29.5502C33.8396 29.2579 34.26 28.8376 34.5526 28.3316C34.8451 27.8255 34.9994 27.2514 35 26.6668Z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5.4502 11.6001L20.0002 20.0168L34.5502 11.6001" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 36.8V20" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </div>
-                    <h2 class="fs-5">Wide Assortment</h2>
-                    <p class="nav-list-itm text-muted">Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
-                </div>
-                <div class="col mt-2">
-                    <div class="mb-4">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M38.3335 6.6665V16.6665H28.3335" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M1.6665 33.3335V23.3335H11.6665" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5.84984 15C6.69512 12.6113 8.13173 10.4756 10.0256 8.79233C11.9195 7.10902 14.2089 5.9329 16.6803 5.37373C19.1517 4.81455 21.7244 4.89053 24.1585 5.59459C26.5925 6.29864 28.8086 7.60782 30.5998 9.39996L38.3332 16.6666M1.6665 23.3333L9.39984 30.6C11.1911 32.3921 13.4071 33.7013 15.8412 34.4053C18.2752 35.1094 20.848 35.1854 23.3194 34.6262C25.7907 34.067 28.0802 32.8909 29.9741 31.2076C31.8679 29.5243 33.3046 27.3887 34.1498 25" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </div>
-                    <h2 class="fs-5">Easy Returns</h2>
-                    <p class="nav-list-itm text-muted">Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy.</p>
-                </div>
-            </div>
-        </div>
-
-        <footer class="position-relative" style="background-color: #f0f3f2; width: 100%;padding-bottom: 80px;">
-            <div class="container pdftcon">
-                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-                    <div class="col d-flex flex-column mb-2">
-                        <h2 class="nav-list-itm1 text-capitalize mb-3">get to know us</h2>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">company</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">about</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">blog</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">help center</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">our value</span></a>
-                    </div>
-                    <div class="col d-flex flex-column">
-                        <h2 class="nav-list-itm1 text-capitalize mb-3">for consumers</h2>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">payments</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">shipping</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">products returns</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover nav-list-itm">FAQ</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">shop checkout</span></a>
-                    </div>
-                    <div class="col d-flex flex-column mb-2">
-                        <h2 class="nav-list-itm1 text-capitalize mb-3">become a shopper</h2>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">shopper opportunities</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">become a shopper</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">earnings</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">ideas & guides</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">new retailers</span></a>
-                    </div>
-                    <div class="col d-flex flex-column">
-                        <h2 class="nav-list-itm1 text-capitalize mb-3">freshcart program</h2>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">freshcart program</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">gift cards</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">promos & coupons</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">freshcart ads</span></a>
-                        <a href="#" class="text-decoration-none"><span class="textColor ftHover text-capitalize nav-list-itm">careers</span></a>
-                    </div>
-                </div>
-            </div>
-            <hr style="color: #a3aeb9;">
-            <div class="container py-2">
-                <div class="row row-cols-md-1 row-cols-lg-2">
-                    <div class="col d-flex align-items-center justify-center">
-                        <span class="text-capitalize pe-2 nav-list-itm1" style="padding-bottom: 2px;">payment partners</span>
-                        <a href=""><img class="me-1" src="images/amazonpay.svg" alt="amazonpay"></a>
-                        <a href=""><img class="me-1" src="images/mastercard.svg" alt="mastercard"></a>
-                        <a href=""><img class="me-1" src="images/paypal.svg" alt="paypal"></a>
-                        <a href=""><img class="me-1" src="images/visa.svg" alt="visa"></a>
-                    </div>
-                    <div class="col d-flex align-items-center justify-center1">
-                        <span class="text-capitalize nav-list-itm1 pe-3 payiconresp rep" style="vertical-align: top;">get deliveries with freshcart</span>
-                        <a href="#"><img src="images/appstore-btn.svg" class="pe-2 payimgresp" alt="app store"></a>
-                        <a href="#"><img src="images/googleplay-btn.svg" class="pe-2 payimgresp" alt="google play"></a>
-                    </div>
-                </div>
-            </div>
-            <hr style="color: #a3aeb9;">
-            <div class="container">
-                <div class="row">
-                    <div class="col d-flex align-items-center justify-center">
-                        <span class="textColor follinkres">follow us on</span>
-                        <a href="#" class="textColor brd-f-link ftHover me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                          </svg></a>
-                          <a href="#" class="textColor brd-f-link ftHover me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                          </svg></a>
-                          <a href="#" class="textColor brd-f-link ftHover me-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                          </svg></a>
-                    </div>
-                    <div class="col d-flex align-items-center justify-center1">
-                        <span class="nav-list-itm textColor text-capitalize follinkres">© 2024 - 2025 all rights reserved </span>
-                    </div>
-                </div>
-            </div>
-            <div class="pos">
-                <a class="bg-dark text-light text-decoration-none rounded buybtn px-3 py-3 ms-5" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3 mb-1 me-2" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                      </svg>Buy Now</a>
-            </div>
-        </footer>
-
-        <script src="products.js"></script>
-    </body>
 </html>
