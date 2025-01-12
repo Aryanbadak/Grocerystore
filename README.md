@@ -20,5 +20,6 @@ An elegant and fully responsive grocery store e-commerce website built using HTM
 
 ## Screenshots
 
-![Website Screenshot](path/to/screenshot.png)
+![Website Screenshot]()![Screenshot 2024-12-29 125950](https://github.com/user-attachments/assets/f42ee4a5-34fe-4d1d-9467-15edd8ed4a4a)
+
 
