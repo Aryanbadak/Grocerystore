@@ -87,7 +87,7 @@ const products=[
         id:9,
         title:"Snacks & Munchies",
         name:"Slurrp Millet Chocolate",
-        stock:9,
+        stock:0,
         price:25,
         oldprice:27,
         qty:0
@@ -102,45 +102,45 @@ const products=[
         qty:0
     },
     {
-        id:6,
-        title:"Dairy, Bread & Eggs",
-        name:"Blueberry Greek Yogurt",
+        id:11,
+        title:"Pet Care",
+        name:"Pedigree",
         stock:6,
         price:50,
         oldprice:55,
         qty:0
     },
     {
-        id:7,
+        id:12,
         title:"Dairy, Bread & Eggs",
-        name:"Britannia Cheese Slices",
+        name:"Brown Bread",
         stock:7,
         price:24,
         oldprice:30,
         qty:0
     },
     {
-        id:8,
-        title:"Instant Food",
-        name:"Kellog's original cereals",
+        id:13,
+        title:"Cold drinks & Juices",
+        name:"Coka Cola",
         stock:8,
         price:120,
         oldprice:150,
         qty:0
     },
     {
-        id:9,
-        title:"Snacks & Munchies",
-        name:"Slurrp Millet Chocolate",
+        id:14,
+        title:"Instant Food",
+        name:"Ouakar Oats",
         stock:9,
         price:25,
         oldprice:27,
         qty:0
     },
     {
-        id:10,
-        title:"Dairy, Bread & Eggs",
-        name:"Amul Butter - 500g",
+        id:15,
+        title:"Snacks & Munchies",
+        name:"Pasta",
         stock:10,
         price:30,
         oldprice:32,
@@ -152,9 +152,9 @@ function DisplayProducts(){
     products.forEach((i)=>{
         elementsel.innerHTML+=
         `<div class="col">
-                <div class="card cat-card">
+                <div class="card cat-card Br-radius">
                     <div class="card-body d-flex flex-column align-items-center position-relative">
-                        <img class="img-fluid" src="images/${i.id}.jpg" alt="" height="200px" width="200px">
+                        <img class="img-fluid p-2" src="images/${i.id}.jpg" alt="" height="200px" width="200px">
                         <div class="container-md d-flex flex-column  hide text-center gx-2">
                             <a href="#" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn icon-res" style="font-size:small;" title="Quick View">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye icon-res-1" viewBox="0 0 16 16">
@@ -208,7 +208,7 @@ DisplayProducts();
 
 const bestsellproducts=[
     {
-        id:11,
+        id:16,
         title:"Tea, Coffee & Drinks",
         name:"Roast Ground Coffee",
         stock:10,
@@ -217,7 +217,7 @@ const bestsellproducts=[
         qty:0
     },
     {
-        id:12,
+        id:17,
         title:"Fruits & Vegetables",
         name:"Crushed Tomatoes",
         stock:10,
@@ -226,7 +226,7 @@ const bestsellproducts=[
         qty:0
     },
     {
-        id:13,
+        id:18,
         title:"Fruits & Vegetables",
         name:"Golden Pineapple",
         stock:10,
@@ -254,9 +254,9 @@ function DisplayBestSellProducts(){
     bestsellproducts.forEach((bestSproducts)=>{
         bestSellsel.innerHTML+=
         `<div class="col">
-                <div class="card cat-card" >
+                <div class="card cat-card Br-radius">
                     <div class="card-body d-flex flex-column align-items-center position-relative">
-                        <img class="img-fluid" src="images/${bestSproducts.id}.jpg" alt="" height="280px">
+                        <img class="img-fluid p-2" src="images/${bestSproducts.id}.jpg" alt="" height="280px">
                         <div class="container d-flex flex-column hide text-center gx-2">
                             <a href="#" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn" style="font-size:small;" title="Quick View">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
@@ -364,24 +364,32 @@ function addCartItem(){
     cartitem.innerHTML=""
     cart.forEach((item)=>{
         cartitem.innerHTML +=`
-            <div class="row">
-        <div class="col-8 d-flex align-items-center justify-content-evenly border-bottom position-relative p-0">
-            <img src="images/${item.id}.jpg" alt="" width="60px" height="60px">
-            <h6 class="fontSz m-0 text-rap">${item.name}</h6>
-            <span class="fontSz">$${item.price}</span>
-            </div>
-            <div class="col-4 d-flex align-items-center justify-content-evenly border-bottom p-0">
-            <span class="d-flex align-items-center">
-            <button class="qunbtn textColor" onclick="changeqty('minus',${item.id})" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">-</button>
-            <span class="qunbtnval">${item.qty}</span>
-            <button class="qunbtn textColor" onclick="changeqty('plus',${item.id})" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">+</button>
-            </span>
-            <span class="d-flex align-items-center text-danger ms-2" onclick="removeitem(${item.id})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
-              </svg></span>
-
-        </div>
-    </div>`
+         <div class="row d-flex align-items-center border-bottom">
+                <div class="col-2 d-flex p-0">
+                    <img src="images/${item.id}.jpg" alt="" width="50px" height="50px" class="p-1 img-fluid">
+                </div>
+                <div class="col-4 d-flex ps-2 pe-0">
+                    <h6 class="fontSz m-0 Ft-Sz-sm">${item.name}</h6>
+                </div>
+                <div class="col-1 d-flex justify-content-center pe-3">
+                    <span class="fontSz Ft-Sz-sm">$${item.price}</span>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <button class="qunbtn textColor"
+                        onclick="changeqty('minus', ${item.id})" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">-</button>
+                    <span class="qunbtnval">${item.qty}</span>
+                    <button class="qunbtn textColor"
+                        onclick="changeqty('plus', ${item.id})" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">+</button>
+                </div>
+                <div class="col-1 d-flex justify-content-center ps-0">
+                    <span class="d-flex align-items-center text-danger" onclick="removeitem(${item.id})"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                        </svg>
+                    </span>
+                </div>
+            </div>`
     })
 }
 
@@ -414,8 +422,6 @@ function subTotal(){
     })
     pricetotal.innerHTML=`<span class="nav-list-itm1 ps-1">total price : $${totalprice}</span>`
     totalitembg.innerHTML=totalitems
-    //console.log(totalprice)
-    //console.log(pricetotal)
 }
 
 function removeitem(id){
@@ -424,13 +430,19 @@ function removeitem(id){
 }
 
 function addWishListItems(){
+    let showStock
     wishitems.innerHTML = ""
     wishList.forEach((item)=>{
+        if(item.stock > 1){
+            showStock = "In Stock"
+        }else{
+            showStock = "Out of stock"
+        }
         wishitems.innerHTML +=`<tr class="text-nowrap"><td class="px-4 py-4"><input type="checkbox" class="form-check-input" value=""></td>
                     <td class="py-2"><img src="images/${item.id}.jpg" alt="" style="width: 50px; height: 50px;"></td>
                     <td class="py-4">${item.name}</td>
                     <td class="py-4 text-muted">$${item.price}</td>
-                    <td class="py-4"><span class="p-1 px-2 bg-success text-light fontSz rounded">In Stock</span></td>
+                    <td class="py-4"><span class="p-1 px-2 bg-dark text-light fontSz rounded">${showStock}</span></td>
                     <td class="py-4"><span href="#" class="text-light text-decoration-none rounded btnCustom curspoint"
                         style="background-color: #0aad0a; vertical-align: middle;" tabindex="0" onclick="addCart(${item.id})">Add to cart</span>
                     </td>
@@ -438,6 +450,7 @@ function addWishListItems(){
                         <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                       </svg></span></td></tr>`
     })
+   
 }
 
 let wishList = JSON.parse(localStorage.getItem("WISHLIST")) || [];
@@ -473,7 +486,6 @@ function updatelist(){
     addWishListItems()
     wishListItemTotal()
     localStorage.setItem("WISHLIST", JSON.stringify(wishList))
-    console.log("update wishlist storage")
 }
 
 
