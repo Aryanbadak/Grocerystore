@@ -115,6 +115,9 @@
     .follinkres{
        text-wrap: nowrap;
     }
+    .pro-sz-sm{
+        font-size: 0.7rem;
+    }
 }
 @media screen and (max-width:600px) {
     .respxs{
