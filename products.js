@@ -245,7 +245,6 @@ let sec = time.getSeconds()
 let day = 0
 if (hr == 24) {
     day++
-    //console.log(day)
 } else {
     false
 }
