@@ -84,23 +84,13 @@ const products = [
         qty: 0
     },
     {
-<<<<<<< HEAD
         id: 9,
         title: "Snacks & Munchies",
         name: "Slurrp Millet Chocolate",
-        stock: 9,
+        stock: 0,
         price: 25,
         oldprice: 27,
         qty: 0
-=======
-        id:9,
-        title:"Snacks & Munchies",
-        name:"Slurrp Millet Chocolate",
-        stock:0,
-        price:25,
-        oldprice:27,
-        qty:0
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
     },
     {
         id: 10,
@@ -112,7 +102,6 @@ const products = [
         qty: 0
     },
     {
-<<<<<<< HEAD
         id: 11,
         title: "Instant Food",
         name: "Pasta",
@@ -162,59 +151,7 @@ const products = [
 function DisplayProducts() {
     products.forEach((i) => {
         elementsel.innerHTML +=
-            `<div class="col ">
-=======
-        id:11,
-        title:"Pet Care",
-        name:"Pedigree",
-        stock:6,
-        price:50,
-        oldprice:55,
-        qty:0
-    },
-    {
-        id:12,
-        title:"Dairy, Bread & Eggs",
-        name:"Brown Bread",
-        stock:7,
-        price:24,
-        oldprice:30,
-        qty:0
-    },
-    {
-        id:13,
-        title:"Cold drinks & Juices",
-        name:"Coka Cola",
-        stock:8,
-        price:120,
-        oldprice:150,
-        qty:0
-    },
-    {
-        id:14,
-        title:"Instant Food",
-        name:"Ouakar Oats",
-        stock:9,
-        price:25,
-        oldprice:27,
-        qty:0
-    },
-    {
-        id:15,
-        title:"Snacks & Munchies",
-        name:"Pasta",
-        stock:10,
-        price:30,
-        oldprice:32,
-        qty:0
-    }
-]
-
-function DisplayProducts(){
-    products.forEach((i)=>{
-        elementsel.innerHTML+=
-        `<div class="col">
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
+            `<div class="col">
                 <div class="card cat-card Br-radius">
                     <div class="card-body d-flex flex-column align-items-center position-relative">
                         <img class="img-fluid p-2" src="images/${i.id}.jpg" alt="" height="200px" width="200px">
@@ -271,7 +208,6 @@ DisplayProducts();
 
 const bestsellproducts = [
     {
-<<<<<<< HEAD
         id: 16,
         title: "Tea, Coffee & Drinks",
         name: "Roast Ground Coffee",
@@ -297,34 +233,7 @@ const bestsellproducts = [
         price: 30,
         oldprice: 32,
         qty: 0
-=======
-        id:16,
-        title:"Tea, Coffee & Drinks",
-        name:"Roast Ground Coffee",
-        stock:10,
-        price:60,
-        oldprice:65,
-        qty:0
-    },
-    {
-        id:17,
-        title:"Fruits & Vegetables",
-        name:"Crushed Tomatoes",
-        stock:10,
-        price:65,
-        oldprice:70,
-        qty:0
-    },
-    {
-        id:18,
-        title:"Fruits & Vegetables",
-        name:"Golden Pineapple",
-        stock:10,
-        price:30,
-        oldprice:32,
-        qty:0
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
-    },
+    }
 ]
 
 const concatArray = products.concat(bestsellproducts)
@@ -340,17 +249,10 @@ if (hr == 24) {
     false
 }
 
-<<<<<<< HEAD
 function DisplayBestSellProducts() {
     bestsellproducts.forEach((bestSproducts) => {
         bestSellsel.innerHTML +=
             `<div class="col">
-=======
-function DisplayBestSellProducts(){
-    bestsellproducts.forEach((bestSproducts)=>{
-        bestSellsel.innerHTML+=
-        `<div class="col">
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
                 <div class="card cat-card Br-radius">
                     <div class="card-body d-flex flex-column align-items-center position-relative">
                         <img class="img-fluid p-2" src="images/${bestSproducts.id}.jpg" alt="" height="280px">
@@ -460,9 +362,8 @@ function updatecart() {
 function addCartItem() {
     cartitem.innerHTML = ""
     cart.forEach((item) => {
-        cartitem.innerHTML +=`
-         <div class="row d-flex align-items-center border-bottom">
-<<<<<<< HEAD
+        cartitem.innerHTML += `
+         <div class="row d-flex align-items-center border-bottom"
                 <div class="col-2 d-flex justify-content-center">
                     <img src="images/${item.id}.jpg" alt="" width="60px" height="60px" class="me-2 p-1">
                 </div>
@@ -481,7 +382,6 @@ function addCartItem() {
                     <span class="d-flex align-items-center text-danger ms-2" onclick="removeitem(${item.id})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                         <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                       </svg></span>
-=======
                 <div class="col-2 d-flex p-0">
                     <img src="images/${item.id}.jpg" alt="" width="50px" height="50px" class="p-1 img-fluid">
                 </div>
@@ -505,7 +405,6 @@ function addCartItem() {
                                 d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
                         </svg>
                     </span>
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
                 </div>
             </div>`
     })
@@ -538,13 +437,8 @@ function subTotal() {
         totalprice += item.price * item.qty
         totalitems += item.qty
     })
-<<<<<<< HEAD
     pricetotal.innerHTML = `<span class="nav-list-itm1 ps-1">total price : $${totalprice}</span>`
     totalitembg.innerHTML = totalitems
-=======
-    pricetotal.innerHTML=`<span class="nav-list-itm1 ps-1">total price : $${totalprice}</span>`
-    totalitembg.innerHTML=totalitems
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
 }
 
 function removeitem(id) {
@@ -552,37 +446,20 @@ function removeitem(id) {
     updatecart()
 }
 
-<<<<<<< HEAD
 function addWishListItems() {
-    wishitems.innerHTML = ""
-    wishList.forEach((item) => {
-        let showstock
-        if (item.stock >= 1) {
-            showstock = "In stock"
-        } else {
-            showstock = "Out of stock"
-        }
-        wishitems.innerHTML += `<tr class="text-nowrap"><td class="px-4 py-4"><input type="checkbox" class="form-check-input" value=""></td>
-                    <td class="py-2"><img src="images/${item.id}.jpg" alt="product img" style="width: 50px; height: 50px;"></td>
-                    <td class="py-4">${item.name}</td>
-                    <td class="py-4 text-muted">$${item.price}</td>
-                    <td class="py-4"><span class="p-1 px-2 text-light fontSz rounded" style="background-color: #000;">${showstock}</span></td>
-=======
-function addWishListItems(){
     let showStock
     wishitems.innerHTML = ""
-    wishList.forEach((item)=>{
-        if(item.stock > 1){
+    wishList.forEach((item) => {
+        if (item.stock > 1) {
             showStock = "In Stock"
-        }else{
+        } else {
             showStock = "Out of stock"
         }
-        wishitems.innerHTML +=`<tr class="text-nowrap"><td class="px-4 py-4"><input type="checkbox" class="form-check-input" value=""></td>
+        wishitems.innerHTML += `<tr class="text-nowrap"><td class="px-4 py-4"><input type="checkbox" class="form-check-input" value=""></td>
                     <td class="py-2"><img src="images/${item.id}.jpg" alt="" style="width: 50px; height: 50px;"></td>
                     <td class="py-4">${item.name}</td>
                     <td class="py-4 text-muted">$${item.price}</td>
                     <td class="py-4"><span class="p-1 px-2 bg-dark text-light fontSz rounded">${showStock}</span></td>
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
                     <td class="py-4"><span href="#" class="text-light text-decoration-none rounded btnCustom curspoint"
                         style="background-color: #0aad0a; vertical-align: middle;" tabindex="0" onclick="addCart(${item.id})">Add to cart</span>
                     </td>
@@ -590,7 +467,7 @@ function addWishListItems(){
                         <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                       </svg></span></td></tr>`
     })
-   
+
 }
 
 let wishList = JSON.parse(localStorage.getItem("WISHLIST")) || [];
@@ -637,5 +514,5 @@ function wishListItemTotal() {
 function RemoveListItem(id) {
     wishList = wishList.filter((item) => item.id !== id)
     updatelist()
-} 
+}
 
