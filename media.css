@@ -110,7 +110,11 @@
     .follinkres{
        text-wrap: nowrap;
     }
+<<<<<<< HEAD
     .pro-sz-sm{
+=======
+    .Ft-Sz-sm{
+>>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
         font-size: 0.7rem;
     }
 }
