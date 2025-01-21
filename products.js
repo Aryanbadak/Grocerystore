@@ -363,7 +363,7 @@ function addCartItem() {
     cartitem.innerHTML = ""
     cart.forEach((item) => {
         cartitem.innerHTML += `
-         <div class="row d-flex align-items-center border-bottom"
+            <div class="row d-flex align-items-center border-bottom">
                 <div class="col-2 d-flex justify-content-center">
                     <img src="images/${item.id}.jpg" alt="" width="60px" height="60px" class="me-2 p-1">
                 </div>
@@ -375,36 +375,13 @@ function addCartItem() {
                 </div>
                 <div class="col-3 d-flex ps-4 pe-0">
                     <button class="qunbtn textColor" onclick="changeqty('minus', ${item.id})" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">-</button>
-                        <span class="qunbtnval">${item.qty}</span>
+                    <span class="qunbtnval">${item.qty}</span>
                     <button class="qunbtn textColor" onclick="changeqty('plus', ${item.id})" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">+</button>
                 </div>
                 <div class="col-2 d-flex justify-content-center">
                     <span class="d-flex align-items-center text-danger ms-2" onclick="removeitem(${item.id})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                         <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                       </svg></span>
-                <div class="col-2 d-flex p-0">
-                    <img src="images/${item.id}.jpg" alt="" width="50px" height="50px" class="p-1 img-fluid">
-                </div>
-                <div class="col-4 d-flex ps-2 pe-0">
-                    <h6 class="fontSz m-0 Ft-Sz-sm">${item.name}</h6>
-                </div>
-                <div class="col-1 d-flex justify-content-center pe-3">
-                    <span class="fontSz Ft-Sz-sm">$${item.price}</span>
-                </div>
-                <div class="col-4 d-flex justify-content-center p-0">
-                    <button class="qunbtn textColor"
-                        onclick="changeqty('minus', ${item.id})" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">-</button>
-                    <span class="qunbtnval">${item.qty}</span>
-                    <button class="qunbtn textColor"
-                        onclick="changeqty('plus', ${item.id})" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">+</button>
-                </div>
-                <div class="col-1 d-flex justify-content-center ps-0">
-                    <span class="d-flex align-items-center text-danger" onclick="removeitem(${item.id})"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                            <path
-                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
-                        </svg>
-                    </span>
                 </div>
             </div>`
     })
