@@ -225,3 +225,34 @@
 .Br-radius{
     border-radius: 9px;
 }
+.Br-radius-Top{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+/* .textColor{
+    color: #000;
+} */
+.textHover:hover{
+    color: #0aad0a;
+}
+.bg-color{
+    background-color: #f0f3f2;
+}
+.fnt-size{
+    font-size: 3rem;
+}
+.img-scale{
+    z-index: 0;
+}
+.img-scale:hover{
+    transform: scale(1.03);
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+.leader-img-resp{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fontSz-2{
+    font-size: 0.7rem;
+}

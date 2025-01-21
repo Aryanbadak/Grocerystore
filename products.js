@@ -416,8 +416,6 @@ function subTotal() {
     })
     pricetotal.innerHTML = `<span class="nav-list-itm1 ps-1">total price : $${totalprice}</span>`
     totalitembg.innerHTML = totalitems
-    //console.log(totalprice)
-    //console.log(pricetotal)
 }
 
 function removeitem(id) {
@@ -493,3 +491,4 @@ function RemoveListItem(id) {
     wishList = wishList.filter((item) => item.id !== id)
     updatelist()
 } 
+
