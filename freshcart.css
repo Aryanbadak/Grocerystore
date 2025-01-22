@@ -229,6 +229,9 @@
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
+.textHover{
+    color: #000;
+}
 .textHover:hover{
     color: #0aad0a;
 }
