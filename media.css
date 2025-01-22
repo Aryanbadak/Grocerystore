@@ -1,151 +1,192 @@
 @media screen and (max-width:992px) {
-    .scrollSec{
+    .scrollSec {
         overflow-x: auto;
     }
-    .responsive{
+
+    .responsive {
         font-size: 1.4rem;
         margin-top: 6px;
         padding: 0;
     }
-    .heroimgcon{
+
+    .heroimgcon {
         top: 35px;
         padding: 0px 30px 15px 40px;
         height: 250px;
     }
-    .carocontresonsive1{
+
+    .carocontresonsive1 {
         font-size: 1.4rem;
         margin-top: 5px;
     }
-    .carocontresonsive2{
+
+    .carocontresonsive2 {
         font-size: 0.8rem;
     }
-    .dis-res{
+
+    .dis-res {
         font-size: 0.6rem;
     }
-    .btnres{
+
+    .btnres {
         padding: 7px;
         font-size: 0.8rem;
     }
-    .mrg-sm{
+
+    .mrg-sm {
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .countdown{
+    .countdown {
         width: 80px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .responsive{
+    .responsive {
         font-size: 1rem;
     }
-    .badge{
+
+    .badge {
         font-size: 0.8rem;
     }
-    .carocontresonsive1{
+
+    .carocontresonsive1 {
         font-size: 1rem;
     }
-    .heroimgcon{
+
+    .heroimgcon {
         top: 20px;
     }
-    .dis-res{
+
+    .dis-res {
         font-size: 0.4rem;
         padding: 3px;
     }
-    .carocontresonsive1{
+
+    .carocontresonsive1 {
         font-size: 0.7rem;
         margin-bottom: 3px;
     }
-    .btnres{
+
+    .btnres {
         padding: 5px;
         font-size: 0.5rem;
     }
-    .popResp{
+
+    .popResp {
         font-size: 0.7rem;
     }
-    .strS{
+
+    .strS {
         font-size: 0.6rem;
     }
-    .prResp{
+
+    .prResp {
         display: flex;
         flex-direction: column;
     }
-    .btnCustom{
+
+    .btnCustom {
         padding: 7px;
     }
-    .icon-res{
+
+    .icon-res {
         height: 26px;
         width: 26px;
     }
-    .icon-res-1{
+
+    .icon-res-1 {
         font-size: 0.4rem;
         position: absolute;
         left: 7px;
         top: 7px;
     }
-    .icon-res-2{
+
+    .icon-res-2 {
         font-size: 0.4rem;
         position: absolute;
         left: 7px;
         top: 43px;
     }
-    .icon-res-3{
+
+    .icon-res-3 {
         font-size: 0.4rem;
         position: absolute;
         left: 7px;
         top: 75px;
     }
-    .hide{
+
+    .hide {
         padding: 2px;
     }
-    .payiconresp{
+
+    .payiconresp {
         font-size: 0.9rem;
     }
-    .payimgresp{
+
+    .payimgresp {
         height: 40px;
         width: 80px;
     }
-    .follinkres{
-       text-wrap: nowrap;
+
+    .follinkres {
+        text-wrap: nowrap;
     }
-    .Ft-Sz-sm{
+
+    .Ft-Sz-sm {
         font-size: 0.7rem;
     }
 }
+
 @media screen and (max-width:600px) {
-    .respxs{
+    .respxs {
         flex-direction: column;
     }
-    .pdtopxs{
+
+    .pdtopxs {
         padding-top: 10px;
     }
-    .row-sm-column{
+
+    .row-sm-column {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media screen and (max-width:1000px) {
-    .justify-center,.justify-center1{
+
+    .justify-center,
+    .justify-center1 {
         justify-content: center;
         margin-top: 10px;
     }
-    .pdftcon{
+
+    .pdftcon {
         padding: 20px;
     }
-    .pdrightres{
+
+    .pdrightres {
         padding: 0 30px 0 30px;
     }
-    .pdleftres{
+
+    .pdleftres {
         padding: 0 30px 0 30px;
     }
-    .mrgbottom-sm{
+
+    .mrgbottom-sm {
         margin-bottom: 30px;
     }
+
+    .customwidth {
+        max-width: 80%;
+    }
 }
+
 @media screen and (max-width:1200px) {
-    .leader-img-resp{
+    .leader-img-resp {
         justify-content: center;
     }
 }
