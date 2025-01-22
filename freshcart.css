@@ -224,15 +224,11 @@
 }
 .Br-radius{
     border-radius: 9px;
-<<<<<<< HEAD
 }
 .Br-radius-Top{
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
-/* .textColor{
-    color: #000;
-} */
 .textHover:hover{
     color: #0aad0a;
 }
@@ -256,6 +252,4 @@
 }
 .fontSz-2{
     font-size: 0.7rem;
-=======
->>>>>>> 21ac76702fa075069c7e1ea01665da20b08ad565
 }
