@@ -36,6 +36,10 @@
     .mrg-sm {
         margin-bottom: 30px;
     }
+
+    .arrow-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px) {

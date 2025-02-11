@@ -185,13 +185,13 @@
 }
 
 .qunbtn {
-    padding: 1px 10px 1px 10px;
+    padding: 0 5px 0 5px;
     background-color: white;
     border: 1px solid #bfc6c4;
 }
 
 .qunbtnval {
-    padding: 1px 10px 1px 10px;
+    padding: 1px 20px 1px 20px;
     background-color: white;
     border-bottom: 1px solid #bfc6c4;
     border-top: 1px solid #bfc6c4;
@@ -319,4 +319,58 @@
 
 .customwidth {
     max-width: 60%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.Qun-btn:focus {
+    background-color: #f0f3f2;
+    color: white;
+}
+
+.wishlisticon1:hover,
+.wishlisticon2:hover {
+    background-color: #cccfce;
+}
+
+.tooltip-msg1 {
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    background-color: #000;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 9px;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.tooltip-msg2 {
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    background-color: #000;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 9px;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.tooltip-msg1:hover {
+    display: block;
+}
+
+.arrow-container {
+    width: 50%;
+}
+
+.img-active {
+    border: 1px solid white;
+}
+
+.img-active:hover {
+    border: 0.1px solid #0aad0a;
 }
