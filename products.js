@@ -239,6 +239,7 @@ function DisplayProducts() {
 
 DisplayProducts();
 
+
 const bestsellproducts = [
     {
         id: 16,
@@ -294,7 +295,7 @@ function DisplayBestSellProducts() {
             `<div class="col">
                 <div class="card cat-card Br-radius">
                     <div class="card-body d-flex flex-column align-items-center position-relative py-2">
-                        <img class="img-fluid p-2" src="images/${bestSproducts.id}.jpg" alt="" height="250px" width="250px">
+                        <img class="img-fluid p-2" src="images/${bestSproducts.id}.jpg" alt="" height="240px" width="240px">
                         <div class="container d-flex flex-column hide text-center gx-2">
                             <a href="" data-bs-target="#Quickviewmodal" data-bs-toggle="modal" class="p-1 mb-2 rounded-circle text-decoration-none text-dark bgbtn" style="font-size:small;" onclick="showQuickView(${bestSproducts.id})">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
@@ -640,6 +641,4 @@ function showQuickView(id) {
     });
 
 }
-
-
 

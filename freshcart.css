@@ -374,3 +374,13 @@
 .img-active:hover {
     border: 0.1px solid #0aad0a;
 }
+
+.logo-size {
+    width: 50px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+}
